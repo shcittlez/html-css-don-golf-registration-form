@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Projects</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Sign up for the Don Golf Global Scramble League</p>
+    <form id="survey-form">
+      <label id="name-label">Full Name<input placeholder="Enter Your Name:" id="name" name="name-label" type="text" required /></label>
+      <label id="email-label">Email Address<input placeholder="Enter Your Email:" id="email" name="email-label" type="email" required /></label>
+<label id="number-label">Handicap<input placeholder="Enter Your Handicap:" id="number" name="number-label" type="number" required min="1" max="99" /></label> 
+      <select id="dropdown">
+    <option value="man" selected>Male</option>
+    <option value="woman">Female</option>
+    <option value="woman">Other Entity</option>
+</select>
+<legend> Where did you hear about Don Golf? (required)</legend>
+        <label for="instagram"><input value="instagram" type="radio" name="referral-type" class="inline" checked /> Instagram</label>
+        <label for="website"><input value="website" type="radio" name="referral-type" class="inline" /> Website</label>
+        <label for="word-of-mouth"><input value="word-of-mouth" type="radio" name="referral-type" class="inline" /> Word of Mouth</label>
+        <label for="fovorite-golf-brand">
+        <input class="inline" id="callaway" type="checkbox" value="callaway" /> Callaway <input class="inline" id="titleist" type="checkbox" value="titleist" /> Titleist <input class="inline" id="don" type="checkbox" value="don" /> Don
+      </label>
+       <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like golfing on the weekends..."></textarea>
+        </label>
+         <input id="submit" type="submit" value="Submit" />
+    </form>
